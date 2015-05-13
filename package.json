@@ -1,0 +1,41 @@
+{
+  "name": "css-starter-kit",
+  "version": "0.0.1",
+  "description": "\"CSS Starter Kit\" is help you write a high quality CSS",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "check": "gulp check",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kubosho/css-starter-kit.git"
+  },
+  "keywords": [
+    "CSS",
+    "starterkit"
+  ],
+  "author": "kubosho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kubosho/css-starter-kit/issues"
+  },
+  "homepage": "https://github.com/kubosho/css-starter-kit#readme",
+  "dependencies": {
+    "autoprefixer-core": "^5.1.11",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-csslint": "^0.1.5",
+    "gulp-postcss": "^5.1.6",
+    "gulp-stylestats": "^0.6.0"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-shell": "^0.4.1",
+    "npm-check": "^3.2.10",
+    "run-sequence": "^1.1.0"
+  }
+}
