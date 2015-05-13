@@ -4,8 +4,8 @@
  * directories
  */
 var dirs = {
-  src: "./src",
-  test: "./test"
+  dist: "./dist",
+  src: "./src"
 };
 
 /**
@@ -38,29 +38,29 @@ gulp.task("clean", del.bind(null, [
 ], {dot: true}));
 
 gulp.task("test", function () {
-    return gulp.src("./src/*.css")
+    return gulp.src(dirs.src + "/*.css")
         .pipe(csslint())
         .pipe(csslint.reporter())
         .pipe(csslint.failReporter());
 });
 
 gulp.task("autoprefixer", function () {
-    return gulp.src("./src/*.css")
+    return gulp.src(dirs.src + "/*.css")
         .pipe(postcss([
             autoprefixer({
                 browsers: ["last 2 version"]
             })
         ]))
-        .pipe(gulp.dest("./dist/"));
+        .pipe(gulp.dest(dirs.dist));
 });
 
 gulp.task("comb", function () {
-    return gulp.src("./src/*.css")
+    return gulp.src(dirs.src + "/*.css")
         .pipe(csscomb())
-        .pipe(gulp.dest("./dist/"));
+        .pipe(gulp.dest(dirs.dist));
 });
 
 gulp.task("stats", function () {
-    return gulp.src("./src/*.css")
+    return gulp.src(dirs.src + "/*.css")
         .pipe(stylestats());
 });
