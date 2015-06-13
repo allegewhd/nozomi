@@ -1,7 +1,7 @@
 {
-  "name": "css-starter-kit",
+  "name": "kotori",
   "version": "0.0.2",
-  "description": "\"CSS Starter Kit\" is help you write a high quality CSS",
+  "description": "\"Kotori\" is help you write a high quality CSS",
   "directories": {
     "test": "test"
   },
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kubosho/css-starter-kit.git"
+    "url": "git+ssh://git@github.com/kubosho/kotori.git"
   },
   "keywords": [
     "CSS",
@@ -21,9 +21,9 @@
   "author": "kubosho",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kubosho/css-starter-kit/issues"
+    "url": "https://github.com/kubosho/kotori/issues"
   },
-  "homepage": "https://github.com/kubosho/css-starter-kit#readme",
+  "homepage": "https://github.com/kubosho/kotori#readme",
   "dependencies": {
     "autoprefixer-core": "^5.1.11",
     "gulp-csscomb": "^3.0.3",
