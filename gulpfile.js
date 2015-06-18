@@ -39,7 +39,7 @@ gulp.task("clean", del.bind(null, [
 
 gulp.task("test", function () {
     return gulp.src(dirs.src + "/*.css")
-        .pipe(csslint())
+        .pipe(csslint('./csslintrc.json'))
         .pipe(csslint.reporter())
         .pipe(csslint.failReporter());
 });
