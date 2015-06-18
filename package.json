@@ -1,6 +1,6 @@
 {
   "name": "kotori",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "\"Kotori\" is help you write a high quality CSS",
   "directories": {
     "test": "test"
