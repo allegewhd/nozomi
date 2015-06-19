@@ -15,7 +15,6 @@ var gulp = require("gulp");
 var csscomb = require("gulp-csscomb");
 var csslint = require("gulp-csslint");
 var postcss = require("gulp-postcss");
-var shell = require("gulp-shell");
 var stylestats = require("gulp-stylestats");
 
 /**
@@ -30,8 +29,6 @@ var sequence = require("run-sequence");
 gulp.task("build", function (cb) {
     return sequence("clean", "test", ["comb", "autoprefixer"], "stats", cb);
 });
-
-gulp.task("check", shell.task("npm-check"));
 
 gulp.task("clean", del.bind(null, [
     dirs.dist + "/*.css",
