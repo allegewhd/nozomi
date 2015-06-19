@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "gulp build",
-    "check": "gulp check",
+    "check": "npm-check",
     "test": "gulp test"
   },
   "repository": {
@@ -24,18 +24,15 @@
     "url": "https://github.com/kubosho/kotori/issues"
   },
   "homepage": "https://github.com/kubosho/kotori#readme",
-  "dependencies": {
-    "autoprefixer-core": "^5.1.11",
-    "gulp-csscomb": "^3.0.3",
-    "gulp-csslint": "^0.1.5",
-    "gulp-postcss": "^5.1.6",
-    "gulp-stylestats": "^0.6.0"
-  },
   "devDependencies": {
-    "del": "^1.1.1",
-    "gulp": "^3.8.11",
-    "gulp-shell": "^0.4.1",
+    "autoprefixer-core": "^5.2.0",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-csscomb": "^3.0.4",
+    "gulp-csslint": "^0.1.5",
+    "gulp-postcss": "^5.1.8",
+    "gulp-stylestats": "^0.7.1",
     "npm-check": "^3.2.10",
-    "run-sequence": "^1.1.0"
+    "run-sequence": "^1.1.1"
   }
 }
