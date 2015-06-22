@@ -27,7 +27,11 @@ var sequence = require("run-sequence");
 //////////////////////////////////////////////////
 
 gulp.task("build", function (cb) {
-    return sequence("clean", "test", ["comb", "autoprefixer"], "stats", cb);
+    return sequence("clean", "copy", ["comb", "autoprefixer"], ["test", "stats"], cb);
+});
+
+gulp.task("watch", function() {
+    gulp.watch(dirs.src + "/*.css", ["build"]);
 });
 
 gulp.task("clean", del.bind(null, [

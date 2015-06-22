@@ -7,8 +7,9 @@
   },
   "scripts": {
     "build": "gulp build",
-    "check": "npm-check",
-    "test": "gulp test"
+    "check": "npm-check -u",
+    "test": "gulp test",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
