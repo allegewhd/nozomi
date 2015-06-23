@@ -27,7 +27,12 @@ var dirs = {
 //////////////////////////////////////////////////
 
 gulp.task("build", function (cb) {
-    return sequence("clean", "copy", ["comb", "autoprefixer"], ["test", "stats"], cb);
+    return sequence(
+        "clean",
+        "copy",
+        ["csscomb", "autoprefixer"],
+        ["csslint", "stylestats"],
+    cb);
 });
 
 gulp.task("watch", function() {
@@ -39,8 +44,10 @@ gulp.task("clean", del.bind(null, [
 ], {dot: true}));
 
 gulp.task("copy", function() {
-    return gulp.src(dirs.src + "/*.css")
-        .pipe(gulp.dest(dirs.dist));
+    return gulp.src([
+        dirs.src + "/*.css"
+    ])
+    .pipe(gulp.dest(dirs.dist));
 });
 
 gulp.task("autoprefixer", function () {
@@ -56,20 +63,20 @@ gulp.task("autoprefixer", function () {
         .pipe(gulp.dest(dirs.dist));
 });
 
-gulp.task("comb", function () {
+gulp.task("csscomb", function () {
     return gulp.src(dirs.dist + "/*.css")
         .pipe(csscomb())
         .pipe(gulp.dest(dirs.dist));
 });
 
-gulp.task("test", function () {
+gulp.task("csslint", function () {
     return gulp.src(dirs.dist + "/*.css")
         .pipe(csslint('csslintrc.json'))
         .pipe(csslint.reporter())
         .pipe(csslint.failReporter());
 });
 
-gulp.task("stats", function () {
+gulp.task("stylestats", function () {
     return gulp.src(dirs.dist + "/*.css")
         .pipe(stylestats());
 });
