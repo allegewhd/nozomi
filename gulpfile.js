@@ -6,7 +6,9 @@
 var gulp = require("gulp");
 var csscomb = require("gulp-csscomb");
 var csslint = require("gulp-csslint");
+var minifyCss = require("gulp-minify-css");
 var postcss = require("gulp-postcss");
+var sourcemaps = require("gulp-sourcemaps");
 var stylestats = require("gulp-stylestats");
 
 /**
@@ -31,6 +33,7 @@ gulp.task("build", function (cb) {
         "clean",
         "copy",
         ["csscomb", "autoprefixer"],
+        "minify-css",
         ["csslint", "stylestats"],
     cb);
 });
@@ -69,9 +72,17 @@ gulp.task("csscomb", function () {
         .pipe(gulp.dest(dirs.dist));
 });
 
+gulp.task("minify-css", function () {
+    return gulp.src(dirs.dist + "/*.css")
+        .pipe(sourcemaps.init())
+        .pipe(minifyCss())
+        .pipe(sourcemaps.write("."))
+        .pipe(gulp.dest(dirs.dist));
+});
+
 gulp.task("csslint", function () {
     return gulp.src(dirs.dist + "/*.css")
-        .pipe(csslint('csslintrc.json'))
+        .pipe(csslint("csslintrc.json"))
         .pipe(csslint.reporter())
         .pipe(csslint.failReporter());
 });

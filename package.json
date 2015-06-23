@@ -32,7 +32,9 @@
     "gulp": "^3.9.0",
     "gulp-csscomb": "^3.0.4",
     "gulp-csslint": "^0.1.5",
+    "gulp-minify-css": "^1.1.6",
     "gulp-postcss": "^5.1.8",
+    "gulp-sourcemaps": "^1.5.2",
     "gulp-stylestats": "^0.7.1",
     "npm-check": "^3.2.10",
     "run-sequence": "^1.1.1"
