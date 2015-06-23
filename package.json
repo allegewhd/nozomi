@@ -2,19 +2,6 @@
   "name": "kotori",
   "version": "0.2.1",
   "description": "\"Kotori\" is help you write a high quality CSS",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "build": "gulp build",
-    "check": "npm-check -u",
-    "test": "gulp csslint",
-    "watch": "gulp watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/kubosho/kotori.git"
-  },
   "keywords": [
     "css",
     "development",
@@ -22,10 +9,21 @@
   ],
   "author": "kubosho",
   "license": "MIT",
+  "homepage": "https://github.com/kubosho/kotori#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kubosho/kotori.git"
+  },
   "bugs": {
     "url": "https://github.com/kubosho/kotori/issues"
   },
-  "homepage": "https://github.com/kubosho/kotori#readme",
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "check": "npm-check -u",
+    "test": "gulp csslint",
+    "watch": "gulp watch"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.0",
     "del": "^1.2.0",
