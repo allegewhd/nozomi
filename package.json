@@ -21,7 +21,7 @@
   "scripts": {
     "build": "gulp build",
     "check": "npm-check -u",
-    "test": "gulp csslint",
+    "test": "gulp test",
     "watch": "gulp watch"
   },
   "devDependencies": {

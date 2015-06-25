@@ -38,6 +38,15 @@ gulp.task("build", function (cb) {
     cb);
 });
 
+gulp.task("test", function (cb) {
+    return sequence(
+        "clean",
+        "copy",
+        ["csscomb", "autoprefixer"],
+        "csslint",
+    cb);
+});
+
 gulp.task("watch", function() {
     gulp.watch(dirs.src + "/*.css", ["build"]);
 });
