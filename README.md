@@ -1,7 +1,7 @@
 # Nozomi (希) :crystal_ball:
 
 [![Build Status](http://img.shields.io/travis/kubosho/nozomi.svg)](https://travis-ci.org/kubosho/nozomi)
-[![Build status](https://ci.appveyor.com/api/projects/status/hher51w347dp5hbk/branch/master?svg=true)](https://ci.appveyor.com/project/kubosho/nozomi/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/0aionhon292p0y4q/branch/master?svg=true)](https://ci.appveyor.com/project/kubosho/nozomi/branch/master)
 [![Gemnasium](http://img.shields.io/gemnasium/kubosho/nozomi.svg)](https://gemnasium.com/kubosho/nozomi)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/kubosho/nozomi/blob/master/LICENSE)
 
