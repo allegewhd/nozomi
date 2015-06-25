@@ -52,7 +52,7 @@ gulp.task("test", function (cb) {
     cb);
 });
 
-gulp.task("watch", function() {
+gulp.task("watch", function () {
     gulp.watch(dirs.src + "/*.css", ["build"]);
 });
 
@@ -60,7 +60,7 @@ gulp.task("clean", del.bind(null, [
     dirs.dist + "/*.css",
 ], {dot: true}));
 
-gulp.task("copy", function() {
+gulp.task("copy", function () {
     return gulp.src([
         dirs.src + "/*.css"
     ])
