@@ -1,7 +1,7 @@
 {
-  "name": "kotori",
+  "name": "nozomi",
   "version": "0.4.0",
-  "description": "\"Kotori\" is help you write the high quality CSS",
+  "description": "\"Nozomi\" is help you write the high quality CSS",
   "keywords": [
     "css",
     "development",
@@ -9,13 +9,13 @@
   ],
   "author": "kubosho",
   "license": "MIT",
-  "homepage": "https://github.com/kubosho/kotori#readme",
+  "homepage": "https://github.com/kubosho/nozomi#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kubosho/kotori.git"
+    "url": "git+ssh://git@github.com/kubosho/nozomi.git"
   },
   "bugs": {
-    "url": "https://github.com/kubosho/kotori/issues"
+    "url": "https://github.com/kubosho/nozomi/issues"
   },
   "private": true,
   "scripts": {
