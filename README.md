@@ -5,7 +5,7 @@
 [![Gemnasium](http://img.shields.io/gemnasium/kubosho/kotori.svg)](https://gemnasium.com/kubosho/kotori)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/kubosho/kotori/blob/master/LICENSE)
 
-"Kotori" is help you write a high quality CSS.
+"Kotori" is help you write the high quality CSS.
 
 (・8・) < cheep cheep
 
@@ -16,7 +16,7 @@
 Run setup command:
 
 ```bash
-npm install
+npm install && npm start
 ```
 
 Now ready to make the development!

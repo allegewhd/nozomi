@@ -21,6 +21,7 @@
   "scripts": {
     "build": "gulp build",
     "check": "npm-check -u",
+    "start": "gulp run",
     "test": "gulp test",
     "watch": "gulp watch"
   },

@@ -38,11 +38,16 @@ gulp.task("build", function (cb) {
     cb);
 });
 
-gulp.task("test", function (cb) {
+gulp.task("run", function (cb) {
     return sequence(
         "clean",
         "copy",
         ["csscomb", "autoprefixer"],
+    cb);
+});
+
+gulp.task("test", function (cb) {
+    return sequence(
         "csslint",
     cb);
 });
