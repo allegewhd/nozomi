@@ -1,6 +1,7 @@
 # Kotori :baby_chick:
 
 [![Build Status](http://img.shields.io/travis/kubosho/kotori.svg)](https://travis-ci.org/kubosho/kotori)
+[![Build status](https://ci.appveyor.com/api/projects/status/hher51w347dp5hbk/branch/master?svg=true)](https://ci.appveyor.com/project/kubosho/kotori/branch/master)
 [![Gemnasium](http://img.shields.io/gemnasium/kubosho/kotori.svg)](https://gemnasium.com/kubosho/kotori)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/kubosho/kotori/blob/master/LICENSE)
 
