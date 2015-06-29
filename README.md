@@ -5,7 +5,7 @@
 [![Gemnasium](http://img.shields.io/gemnasium/kubosho/nozomi.svg)](https://gemnasium.com/kubosho/nozomi)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/kubosho/nozomi/blob/master/LICENSE)
 
-"Nozomi" is help you write the high quality CSS.
+"Nozomi" helps you write high quality CSS.
 
 ## Quickstart
 
